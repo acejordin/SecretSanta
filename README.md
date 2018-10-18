@@ -1,6 +1,6 @@
 # Secret Santa
 
-After handing out who has who for this years secret santa, do you ever get sick of hearing "But I had John last year!"? 
+After handing out who has who for this years' secret santa, do you ever get sick of hearing "But I had John last year!"? 
 
 Then boy howdy is this the app for you.
 
@@ -10,7 +10,7 @@ They're probably getting each other enought gifts already.
 What if they have a kid too? They shouldn't get him either. 
 
 Or what if another 2 in the group are on the outs and you
-don't want to risk one getting the other a box of coal?
+don't want to risk one getting the other a box of coal again?
 
 Yeesh, this is getting complicated...
 
@@ -20,7 +20,7 @@ Enter this handy .NET console app!
 
 Edit the participants.json file to contain everyone - as well as who shouldn't be matched with who.
 
-So below Alex shouldn't match with Lauren, but can match with anyone else. Note you can add multiple people to the NeverMatchList.
+So below Alex shouldn't match with Lauren (they're married, say), but can match with anyone else. Note you can add multiple people to the NeverMatchList.
 
 ```json
 [
@@ -131,7 +131,7 @@ This was written and tested in Visual Studio 2017 and .NET 4.7.1. It should also
 
 Run the app and you should see output like so:
 
-```
+```console
 Results
 -------
 Alex -> Leif
@@ -151,9 +151,9 @@ Let everyone know who they have this year, then add these to histories.json and 
 
 ## Miscellaneous
 
-You may wonder why it asks if you want to run it again. Well, due to the randomness sometimes it will leave people out, in which case you'll see:
+You may wonder why it asks if you want to run it again. Well, due to the randomness sometimes people to choose will run out before everyone has had a chance to choose, in which case you'll see:
 
-```
+```console
 FAILED!!
 Results
 -------
@@ -168,7 +168,9 @@ Leif -> Lauren
 Run again? [y]/n:
 ```
 
-Alex didn't get assigned someone, oh no! That happens sometimes, and the more conditions there are the more likely it'll happen, so just keep re-running it until everybody gets someone.
+Alex didn't get assigned someone, oh no! That happens sometimes, and the more conditions there are the more likely it'll happen, so just keep re-running it until everybody gets someone. If if keeps failing, then consider pruning the history or reducing the people in the `NeverMatchList`s.
+
+How does this happen? Quick example: say 3 people are in a group - `A`, `B` and `C`. `A` randomly chooses `B` and `B` randomly chooses `A`. Now `C` can't choose anyone, because `A` and `B` are already chosen.
 
 If there are any smart people reading this who know how to avoid this, let me know. I have one tweak in there to reduce the chances, but my graph-fu isn't good enough to eliminate it entirely.
 
