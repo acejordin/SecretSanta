@@ -1,0 +1,39 @@
+﻿[
+	{
+		Name: "2017",
+		HistoryParticipants: [
+			{
+				Gifter: "Alex",
+				Giftee: "Micaela"
+			},
+			{
+				Gifter: "Lauren",
+				Giftee: "Bran"
+			},
+			{
+				Gifter: "Micaela",
+				Giftee: "Jojo"
+			},
+			{
+				Gifter: "Bran",
+				Giftee: "Mikkel"
+			},
+			{
+				Gifter: "Kohl",
+				Giftee: "Leif"
+			},
+			{
+				Gifter: "Jojo",
+				Giftee: "Alex"
+			},
+			{
+				Gifter: "Mikkel",
+				Giftee: "Lauren"
+			},
+			{
+				Gifter: "Leif",
+				Giftee: "Kohl"
+			}
+		]
+	}
+]

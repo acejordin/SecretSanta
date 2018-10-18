@@ -1,0 +1,50 @@
+﻿[
+	{
+		Name: "Alex",
+		NeverMatchList: [
+			{ Name: "Lauren" }
+		]
+	},
+	{
+		Name: "Lauren",
+		NeverMatchList: [
+			{ Name: "Alex" }
+		]
+	},
+	{
+		Name: "Micaela",
+		NeverMatchList: [
+			{ Name: "Bran" }
+		]
+	},
+	{
+		Name: "Bran",
+		NeverMatchList: [
+			{ Name: "Micaela" }
+		]
+	},
+	{
+		Name: "Kohl",
+		NeverMatchList: [
+			{ Name: "Jojo" }
+		]
+	},
+	{
+		Name: "Jojo",
+		NeverMatchList: [
+			{ Name: "Kohl" }
+		]
+	},
+	{
+		Name: "Mikkel",
+		NeverMatchList: [
+			{ Name: "Leif" }
+		]
+	},
+	{
+		Name: "Leif",
+		NeverMatchList: [
+			{ Name: "Mikkel" }
+		]
+	}
+]
