@@ -127,7 +127,7 @@ Note that anyone listed as a Gifter or a Giftee must exist in the participants.j
 
 ## How to Run
 
-This was written and tested in Visual Studio 2017 and .NET 4.7.1. It should also work with .NET Core, but I haven't tested that yet.
+This was written in C# and tested in Visual Studio 2017 and .NET 4.7.1. It should also work with .NET Core, but I haven't tested that yet.
 
 Run the app and you should see output like so:
 
@@ -172,5 +172,5 @@ Alex didn't get assigned someone, oh no! That happens sometimes, and the more co
 
 How does this happen? Quick example: say 3 people are in a group - `A`, `B` and `C`. `A` randomly chooses `B` and `B` randomly chooses `A`. Now `C` can't choose anyone, because `A` and `B` are already chosen.
 
-If there are any smart people reading this who know how to avoid this, let me know. I have one tweak in there to reduce the chances, but my graph-fu isn't good enough to eliminate it entirely.
+If there are any smart people reading who know how to avoid this, let me know. I have one tweak in there to reduce the chances, but my graph-fu isn't good enough to eliminate it entirely.
 
