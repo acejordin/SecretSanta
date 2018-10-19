@@ -35,5 +35,42 @@
 				Giftee: "Kohl"
 			}
 		]
+	},
+	{
+		Name: "2018",
+		HistoryParticipants: [
+			{
+				Gifter: "Alex",
+				Giftee: "Leif"
+			},
+			{
+				Gifter: "Lauren",
+				Giftee: "Kohl"
+			},
+			{
+				Gifter: "Micaela",
+				Giftee: "Mikkel"
+			},
+			{
+				Gifter: "Bran",
+				Giftee: "Jojo"
+			},
+			{
+				Gifter: "Kohl",
+				Giftee: "Lauren"
+			},
+			{
+				Gifter: "Jojo",
+				Giftee: "Bran"
+			},
+			{
+				Gifter: "Mikkel",
+				Giftee: "Alex"
+			},
+			{
+				Gifter: "Leif",
+				Giftee: "Micaela"
+			}
+		]
 	}
 ]

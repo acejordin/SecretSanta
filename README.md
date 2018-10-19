@@ -5,7 +5,7 @@ After handing out who has who for this years' secret santa, do you ever get sick
 Then boy howdy is this the app for you.
 
 Let's say you have 8 people in your secret santa group. But wait! Some are married! You don't want to match two people that are married right?
-They're probably getting each other enought gifts already.
+They're probably getting each other enough gifts already.
 
 What if they have a kid too? They shouldn't get him either. 
 
