@@ -1,50 +1,158 @@
 ﻿[
 	{
-		Name: "Alex",
+		Name: "Scott",
 		NeverMatchList: [
-			{ Name: "Lauren" }
+			{ Name: "Kristin" }, { Name: "Alec" }, { Name: "Kayla" }, { Name: "Cole" }, { Name: "Maddie" }
 		]
 	},
 	{
-		Name: "Lauren",
+		Name: "Kristin",
 		NeverMatchList: [
-			{ Name: "Alex" }
+			{ Name: "Scott" }, { Name: "Alec" }, { Name: "Kayla" }, { Name: "Cole" }, { Name: "Maddie" }
 		]
 	},
 	{
-		Name: "Micaela",
+		Name: "Alec",
 		NeverMatchList: [
-			{ Name: "Bran" }
+			{ Name: "Laura" }, { Name: "Scott" }, { Name: "Kristin" }, { Name: "Kayla" }, { Name: "Cole" }, { Name: "Maddie" }
 		]
 	},
 	{
-		Name: "Bran",
+		Name: "Laura",
 		NeverMatchList: [
-			{ Name: "Micaela" }
+			{ Name: "Alec" }
 		]
 	},
 	{
-		Name: "Kohl",
+		Name: "Kayla",
 		NeverMatchList: [
-			{ Name: "Jojo" }
+			{ Name: "Branden" }, { Name: "Scott" }, { Name: "Kristin" }, { Name: "Alec" }, { Name: "Cole" }, { Name: "Maddie" }
 		]
 	},
 	{
-		Name: "Jojo",
+		Name: "Branden",
 		NeverMatchList: [
-			{ Name: "Kohl" }
+			{ Name: "Kayla" }
 		]
 	},
 	{
-		Name: "Mikkel",
+		Name: "Cole",
 		NeverMatchList: [
-			{ Name: "Leif" }
+			{ Name: "Joanna" }, { Name: "Scott" }, { Name: "Kristin" }, { Name: "Kayla" }, { Name: "Alec" }, { Name: "Maddie" }
 		]
 	},
 	{
-		Name: "Leif",
+		Name: "Joanna",
 		NeverMatchList: [
-			{ Name: "Mikkel" }
+			{ Name: "Cole" }
 		]
-	}
+	},
+	{
+		Name: "Maddie",
+		NeverMatchList: [
+			{ Name: "Keith" }, { Name: "Scott" }, { Name: "Kristin" }, { Name: "Kayla" }, { Name: "Cole" }, { Name: "Alec" }
+		]
+	},
+	{
+		Name: "Keith",
+		NeverMatchList: [
+			{ Name: "Maddie" }
+		]
+	},
+	{
+		Name: "Brad",
+		NeverMatchList: [
+			{ Name: "Jan" }, { Name: "Carl" }, { Name: "Stacey" }
+		]
+	},
+	{
+		Name: "Jan",
+		NeverMatchList: [
+			{ Name: "Brad" }, { Name: "Carl" }, { Name: "Stacey" }
+		]
+	},
+	{
+		Name: "Carl",
+		NeverMatchList: [
+			{ Name: "Brad" }, { Name: "Jan"}, { Name: "Stacey" }
+		]
+	},
+	{
+		Name: "Melissa",
+		NeverMatchList: [
+			{ Name: "Carl" }
+		]
+	},
+	{
+		Name: "Stacey",
+		NeverMatchList: [
+			{ Name: "Mike" }, { Name: "Brad" }, { Name: "Jan"}, { Name: "Carl" }
+		]
+	},
+	{
+		Name: "Mike",
+		NeverMatchList: [
+			{ Name: "Stacey" }
+		]
+	},	
+	{
+		Name: "Mel",
+		NeverMatchList: [
+			{ Name: "Chris" }, { Name: "Colin" }
+		]
+	},
+	{
+		Name: "Chris",
+		NeverMatchList: [
+			{ Name: "Mel" }, { Name: "Colin" }
+		]
+	},
+	{
+		Name: "Colin",
+		NeverMatchList: [
+			{ Name: "Chris" }, { Name: "Mel" }
+		]
+	},
+	{
+		Name: "Tim",
+		NeverMatchList: [
+			{ Name: "Denise" }, { Name: "Corinne" }, { Name: "Annika" }
+		]
+	},
+	{
+		Name: "Denise",
+		NeverMatchList: [
+			{ Name: "Tim" }, { Name: "Corinne" }, { Name: "Annika" }
+		]
+	},
+	{
+		Name: "Corinne",
+		NeverMatchList: [
+			{ Name: "Tim" }, { Name: "Denise" }, { Name: "Annika" }
+		]
+	},
+	{
+		Name: "Annika",
+		NeverMatchList: [
+			{ Name: "Tim" }, { Name: "Denise" }, { Name: "Corinne" }
+		]
+	},
+	{
+		Name: "Bill",
+		NeverMatchList: [
+			{ Name: "Lisa" }, { Name: "Thea" }
+		]
+	},
+	{
+		Name: "Lisa",
+		NeverMatchList: [
+			{ Name: "Bill" }, { Name: "Thea" }
+		]
+	},
+	{
+		Name: "Thea",
+		NeverMatchList: [
+			{ Name: "Bill" }, { Name: "Lisa" }
+		]
+	},
 ]

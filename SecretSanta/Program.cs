@@ -2,6 +2,7 @@
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 
@@ -13,8 +14,11 @@ namespace SecretSanta
         {
             Random random = new Random((int)DateTime.Now.Ticks);
 
+            int iterationCount = 0;
+
             while (true)
             {
+                iterationCount++;
                 var participants = GetParticipants();
                 var shuffledParticipants = participants.OrderBy(x => random.Next()).ToList();
 
@@ -30,12 +34,15 @@ namespace SecretSanta
                     giftee.BeenPicked = true;
                 }
 
-                if (failed)
-                {
-                    Console.WriteLine("FAILED!!");
-                }
+                Console.Write($"Attempts: {iterationCount}\r");
+
+                //Auto run until success
+                if (failed) continue;
+
+                Console.WriteLine();
 
                 PrintResults(participants);
+
                 Console.Write("Run again? [y]/n: ");
                 var key = Console.ReadKey();
                 Console.WriteLine();
@@ -97,6 +104,7 @@ namespace SecretSanta
                 {
                     //don't match someone if they've had them in the past
                     var found = history.HistoryParticipants.FindAll(x => x.Gifter.ToLower() == participant.Name.ToLower());
+                    if (found.Count == 0) { continue; }
                     if (found.Count != 1) { throw new Exception(); }
                     var giftee = participants.Find(x => x.Name == found[0].Giftee);
                     giftee.Disqualified = true;
@@ -166,6 +174,7 @@ namespace SecretSanta
         }
     }
 
+    [DebuggerDisplay("Name = {Name}, Giftee = {Giftee}, NeverMatchCount = {NeverMatchList.Count}, DQ'd = {Disqualified}, Picked = {BeenPicked}")]
     class Participant
     {
         public string Name { get; set; }
@@ -175,12 +184,14 @@ namespace SecretSanta
         public Participant Giftee { get; set; }
     }
 
+    [DebuggerDisplay("Name = {Name}")]
     class History
     {
         public string Name { get; set; }
         public List<HistoryParticipant> HistoryParticipants { get; set; } = new List<HistoryParticipant>();
     }
 
+    [DebuggerDisplay("Gifter = {Gifter}, Giftee = {Giftee}")]
     class HistoryParticipant
     {
         public string Gifter { get; set; }

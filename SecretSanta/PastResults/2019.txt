@@ -1,0 +1,28 @@
+Results
+-------
+Scott -> Stacey
+Kristin -> Keith
+Alec -> Annika
+Laura -> Lisa
+Kayla -> Bill
+Branden -> Scott
+Cole -> Laura
+Joanna -> Brad
+Maddie -> Mel
+Keith -> Alec
+Brad -> Colin
+Jan -> Mike
+Carl -> Corinne
+Melissa -> Cole
+Stacey -> Melissa
+Mike -> Tim
+Mel -> Thea
+Chris -> Kristin
+Colin -> Carl
+Tim -> Chris
+Denise -> Jan
+Corinne -> Maddie
+Annika -> Branden
+Bill -> Kayla
+Lisa -> Denise
+Thea -> Joanna
