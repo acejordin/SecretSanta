@@ -20,7 +20,7 @@
 	{
 		Name: "Laura",
 		NeverMatchList: [
-			{ Name: "Alec" }
+			{ Name: "Alec" }, { Name: "Scott" }, { Name: "Kristin" }, { Name: "Kayla" }, { Name: "Cole" }, { Name: "Maddie" }
 		]
 	},
 	{
@@ -32,7 +32,7 @@
 	{
 		Name: "Branden",
 		NeverMatchList: [
-			{ Name: "Kayla" }
+			{ Name: "Kayla" }, { Name: "Scott" }, { Name: "Kristin" }, { Name: "Alec" }, { Name: "Cole" }, { Name: "Maddie" }
 		]
 	},
 	{
@@ -62,13 +62,13 @@
 	{
 		Name: "Carl",
 		NeverMatchList: [
-			{ Name: "Brad" }, { Name: "Jan"}, { Name: "Stacey" }
+			{ Name: "Melissa" }, { Name: "Brad" }, { Name: "Jan"}, { Name: "Stacey" }
 		]
 	},
 	{
 		Name: "Melissa",
 		NeverMatchList: [
-			{ Name: "Carl" }
+			{ Name: "Carl" }, { Name: "Brad" }, { Name: "Jan"}, { Name: "Stacey" }
 		]
 	},
 	{
@@ -80,7 +80,7 @@
 	{
 		Name: "Mike",
 		NeverMatchList: [
-			{ Name: "Stacey" }
+			{ Name: "Stacey" }, { Name: "Brad" }, { Name: "Jan"}, { Name: "Carl" }
 		]
 	},	
 	{
@@ -122,7 +122,7 @@
 	{
 		Name: "Nick",
 		NeverMatchList: [
-			{ Name: "Corinne" }
+			{ Name: "Corinne" }, { Name: "Tim" }, { Name: "Denise" }, { Name: "Annika" }
 		]
 	},
 	{
