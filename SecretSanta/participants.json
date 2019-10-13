@@ -38,25 +38,13 @@
 	{
 		Name: "Cole",
 		NeverMatchList: [
-			{ Name: "Joanna" }, { Name: "Scott" }, { Name: "Kristin" }, { Name: "Kayla" }, { Name: "Alec" }, { Name: "Maddie" }
-		]
-	},
-	{
-		Name: "Joanna",
-		NeverMatchList: [
-			{ Name: "Cole" }
+			{ Name: "Scott" }, { Name: "Kristin" }, { Name: "Kayla" }, { Name: "Alec" }, { Name: "Maddie" }
 		]
 	},
 	{
 		Name: "Maddie",
 		NeverMatchList: [
-			{ Name: "Keith" }, { Name: "Scott" }, { Name: "Kristin" }, { Name: "Kayla" }, { Name: "Cole" }, { Name: "Alec" }
-		]
-	},
-	{
-		Name: "Keith",
-		NeverMatchList: [
-			{ Name: "Maddie" }
+			{ Name: "Scott" }, { Name: "Kristin" }, { Name: "Kayla" }, { Name: "Cole" }, { Name: "Alec" }
 		]
 	},
 	{
@@ -128,7 +116,13 @@
 	{
 		Name: "Corinne",
 		NeverMatchList: [
-			{ Name: "Tim" }, { Name: "Denise" }, { Name: "Annika" }
+			{ Name: "Nick" }, { Name: "Tim" }, { Name: "Denise" }, { Name: "Annika" }
+		]
+	},
+	{
+		Name: "Nick",
+		NeverMatchList: [
+			{ Name: "Corinne" }
 		]
 	},
 	{
@@ -152,7 +146,7 @@
 	{
 		Name: "Thea",
 		NeverMatchList: [
-			{ Name: "Bill" }, { Name: "Lisa" }
+			{ Name: "Bill" }, { Name: "Lisa" }, { Name: "Scott" }, { Name: "Kristin" }, { Name: "Chris" }, { Name: "Mel" }, { Name: "Tim" }, { Name: "Denise" }, { Name: "Brad" }, { Name: "Jan" }
 		]
 	},
 ]

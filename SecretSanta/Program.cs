@@ -25,7 +25,9 @@ namespace SecretSanta
                 bool failed = false;
                 foreach (var participant in shuffledParticipants)
                 {
-                    var eligibleParticipants = GetEligibleParticipants(participant, participants);
+                    //Sort those with the most people not to match with first. If someone has a lot of restrictions, they should get a giftee sooner
+                    //while there are enough people left to pick
+                    var eligibleParticipants = GetEligibleParticipants(participant, participants.OrderByDescending(x => x.NeverMatchList.Count).ToList());
                     if (eligibleParticipants.Count == 0) { failed = true; break; }
 
                     int randInt = random.Next(0, eligibleParticipants.Count - 1);
@@ -50,6 +52,7 @@ namespace SecretSanta
                 {
                     break;
                 }
+                iterationCount = 0;
                 Console.WriteLine();
             }
             Console.WriteLine("Done. Press Enter to quit...");
@@ -58,7 +61,7 @@ namespace SecretSanta
 
         static void PrintResults(List<Participant> participants)
         {
-            Console.WriteLine("Results");
+            Console.WriteLine($"Secret Santa {DateTime.Now.Year}");
             Console.WriteLine("-------");
             foreach (var participant in participants)
             {
